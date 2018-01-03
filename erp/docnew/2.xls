@@ -1,0 +1,198 @@
+﻿<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="ProgId" content="Excel.Sheet"><style>
+.tblGenFixed {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; FONT-STYLE: normal; BORDER-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; LETTER-SPACING: 0px; BORDER-TOP: 0px; FONT-WEIGHT: normal; BORDER-RIGHT: 0px; TEXT-DECORATION: none; cell-spacing: 0px; cell-padding: 0px
+}
+.tblGenFixed TD {
+	Z-INDEX: 1; BORDER-BOTTOM: white 0.5pt solid; BORDER-LEFT: medium none; TEXT-INDENT: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; WHITE-SPACE: nowrap; OVERFLOW: hidden; BORDER-TOP: medium none; BORDER-RIGHT: white 0.5pt solid; WORD-SPACING: 0px
+}
+.tblGenFixed .rg {
+	COLOR: blue
+}
+.tblGenFixed .rv {
+	BACKGROUND: #d8f173
+}
+.tblGenFixed .rs {
+	BACKGROUND: #bfdb4d
+}
+.tblGenFixed .s1 {
+	BORDER-BOTTOM: white 0.5pt solid; BORDER-RIGHT: #a6c12b 0.5pt solid
+}
+.tblGenFixed .s2 {
+	BORDER-BOTTOM: #a6c12b 0.5pt solid; BORDER-RIGHT: white 0.5pt solid
+}
+.tblGenFixed .s3 {
+	BORDER-BOTTOM: #a6c12b 0.5pt solid; BORDER-RIGHT: #a6c12b 0.5pt solid
+}
+.tblGenFixed .fb {
+	FONT-WEIGHT: bold
+}
+.tblGenFixed .fi {
+	FONT-STYLE: oblique
+}
+.tblGenFixed .fu {
+	TEXT-DECORATION: underline
+}
+.tblGenFixed .a0 {
+	TEXT-ALIGN: left; VERTICAL-ALIGN: middle
+}
+.tblGenFixed .a1 {
+	TEXT-ALIGN: right; VERTICAL-ALIGN: middle
+}
+.tblGenFixed .a2 {
+	TEXT-ALIGN: center; VERTICAL-ALIGN: middle
+}
+.tblGenFixed .a3 {
+	TEXT-ALIGN: left; VERTICAL-ALIGN: top
+}
+.tblGenFixed .a4 {
+	TEXT-ALIGN: right; VERTICAL-ALIGN: top
+}
+.tblGenFixed .a5 {
+	TEXT-ALIGN: center; VERTICAL-ALIGN: top
+}
+.tblGenFixed .a6 {
+	TEXT-ALIGN: left; VERTICAL-ALIGN: bottom
+}
+.tblGenFixed .a7 {
+	TEXT-ALIGN: right; VERTICAL-ALIGN: bottom
+}
+.tblGenFixed .a8 {
+	TEXT-ALIGN: center; VERTICAL-ALIGN: bottom
+}
+.tblGenFixed .wb {
+	; WIDTH: expression(this.offsetWidth+"px"); WORD-BREAK: break-all
+}
+
+@media Print    
+{
+.tblGenFixed .np {
+	PADDING-LEFT: 99999px; COLOR: white !important; PADDING-TOP: 99999px
+}
+.tblGenFixed .firstrow {
+	POSITION: absolute
+}
+.tblGenFixed .s1 {
+	BORDER-BOTTOM: white 0.5pt solid; BORDER-RIGHT: black 0.5pt solid
+}
+.tblGenFixed .s2 {
+	BORDER-BOTTOM: black 0.5pt solid; BORDER-RIGHT: white 0.5pt solid
+}
+.tblGenFixed .s3 {
+	BORDER-BOTTOM: black 0.5pt solid; BORDER-RIGHT: black 0.5pt solid
+}
+
+}
+
+@media Screen    
+{
+.tblGenFixed .np {
+	
+}
+.tblGenFixed .firstrow {
+	
+}
+
+}
+</style><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:WorksheetOptions><x:DoNotDisplayGridlines/><x:DoNotDisplayZeros/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml></head><body><TABLE style="WIDTH: 676px; FONT-SIZE: 10pt" class="tblGenFixed " prop="{module:'accounting',ttype:'report',tname:'incomestatement',version:'1',title:'损益表',LaPmK:'',rptmenu:'1,0,0,0,'}">
+	<col style="WIDTH:341px;"/><col style="WIDTH:34px;"/><col style="WIDTH:150px;"/><col style="WIDTH:150px;"/><TBODY>
+		<TR style="HEIGHT: 40px">
+			<TD style="FONT-WEIGHT: bold;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;FONT-SIZE: 18pt" colSpan="4">利&#160;润&#160;表</TD></TR>
+		<TR style="HEIGHT: 33px">
+			<TD colSpan="4" style="TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">2009年2月</TD></TR>
+		<TR style="HEIGHT: 33px">
+			<TD colSpan="3" style="BORDER-RIGHT: white .5pt solid;BORDER-BOTTOM: black .5pt solid;">编制单位：腾胜科技</TD>
+			<TD style="BORDER-RIGHT: white .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">金额单位：元&#160;&#160;&#160;</TD></TR>
+		<TR style="DISPLAY: block; HEIGHT: 27px">
+			<TD rowSpan="2" style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">项&#160;&#160;&#160;&#160;&#160;目</TD>
+			<TD rowSpan="2" style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">行次</TD>
+			<TD rowSpan="2" style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">本月数</TD>
+			<TD rowSpan="2" style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">累计数</TD></TR>
+		<TR style="DISPLAY: block; HEIGHT: 13px">
+		</TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">一、主营业务收入</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">1</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;减：&#160;&#160;主营业务成本</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">2</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;营业费用</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">3</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;主营业务税金及附加</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">4</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">二、主营业务利润</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">5</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" x:num="0" xmlns:x="urn:schemas-microsoft-com:office:excel" x:fmla="=C6-C7-C8-C9"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" x:num="0" xmlns:x="urn:schemas-microsoft-com:office:excel" x:fmla="=D6-D7-D8-D9"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;加：&#160;&#160;&#160;其他业务利润</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">6</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;减：&#160;&#160;&#160;管理费用</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">7</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;财务费用</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">8</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">三、营业利润（亏损用“－”号）</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">9</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" x:num="0" xmlns:x="urn:schemas-microsoft-com:office:excel" x:fmla="=C10+C11-C12-C13"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" x:num="0" xmlns:x="urn:schemas-microsoft-com:office:excel" x:fmla="=D10+D11-D12-D13"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;&#160;加：&#160;&#160;投资收益</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">10</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;补贴收入</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">11</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;营业外收入</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">12</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;&#160;减：&#160;&#160;营业外支出</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">13</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;&#160;加：&#160;&#160;以前年度损益调整</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">14</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">四、利润总额</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">15</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" x:num="0" xmlns:x="urn:schemas-microsoft-com:office:excel" x:fmla="=C14+C15+C16+C17-C18+C19"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" x:num="0" xmlns:x="urn:schemas-microsoft-com:office:excel" x:fmla="=D14+D15+D16+D17-D18+D19"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">&#160;&#160;&#160;&#160;&#160;减：&#160;&#160;所得税</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">16</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" xmlns:x="urn:schemas-microsoft-com:office:excel" x:num="0"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD style="BORDER-LEFT: black .5pt solid;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;FONT-SIZE: 10pt">五、净利润</TD>
+			<TD style="BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">17</TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" x:num="0" xmlns:x="urn:schemas-microsoft-com:office:excel" x:fmla="=C20-C21"></TD>
+			<TD style="TEXT-ALIGN: right; VERTICAL-ALIGN: middle;BORDER-RIGHT: black .5pt solid;BORDER-BOTTOM: black .5pt solid;mso-number-format: '#,##0.00'" x:num="0" xmlns:x="urn:schemas-microsoft-com:office:excel" x:fmla="=D20-D21"></TD></TR>
+		<TR style="HEIGHT: 40px">
+			<TD colSpan="4" style="TEXT-ALIGN: center; VERTICAL-ALIGN: middle;">&#160;单位负责人：&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;财会负责人：&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;复核：&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;制表：</TD></TR></TBODY></TABLE></body></html>

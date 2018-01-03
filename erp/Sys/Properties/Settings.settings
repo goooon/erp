@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sys.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Sys_MBService_MobileCodeWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://webservice.webxml.com.cn/WebServices/MobileCodeWS.asmx</Value>
+    </Setting>
+    <Setting Name="Sys_psService_PostCode" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://gz.wufish.com/webservice/postcode.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

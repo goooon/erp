@@ -1,0 +1,8 @@
+bin\Debug\UserPrint.dll
+bin\Debug\UserPrint.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\UserPrint.ReportModal.resources
+obj\Debug\UserPrint.csproj.GenerateResource.Cache
+obj\Debug\UserPrint.dll.licenses
+obj\Debug\UserPrint.dll
+obj\Debug\UserPrint.pdb

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.wufish.com/WebService/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.wufish.com/WebService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.wufish.com/WebService/">
+      <s:element name="GetAllProvinceName">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllProvinceNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllProvinceNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCityName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCityNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTownName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CityName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTownNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTownNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CityName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCityCodeResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityNameByPostCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityNameByPostCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCityNameByPostCodeResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityNameByTelCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityNameByTelCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCityNameByTelCodeResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllProvinceNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllProvinceName" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProvinceNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllProvinceNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCityName" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCityNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTownNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTownName" />
+  </wsdl:message>
+  <wsdl:message name="GetTownNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTownNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCityCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCityCode" />
+  </wsdl:message>
+  <wsdl:message name="GetCityCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCityCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByPostCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCityNameByPostCode" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByPostCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCityNameByPostCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByTelCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCityNameByTelCode" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByTelCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCityNameByTelCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProvinceNameHttpGetIn" />
+  <wsdl:message name="GetAllProvinceNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameHttpGetIn">
+    <wsdl:part name="ProName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetTownNameHttpGetIn">
+    <wsdl:part name="ProName" type="s:string" />
+    <wsdl:part name="CityName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTownNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetCityCodeHttpGetIn">
+    <wsdl:part name="ProName" type="s:string" />
+    <wsdl:part name="CityName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCityCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByPostCodeHttpGetIn">
+    <wsdl:part name="PostCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByPostCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByTelCodeHttpGetIn">
+    <wsdl:part name="TelCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByTelCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProvinceNameHttpPostIn" />
+  <wsdl:message name="GetAllProvinceNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameHttpPostIn">
+    <wsdl:part name="ProName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetTownNameHttpPostIn">
+    <wsdl:part name="ProName" type="s:string" />
+    <wsdl:part name="CityName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTownNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetCityCodeHttpPostIn">
+    <wsdl:part name="ProName" type="s:string" />
+    <wsdl:part name="CityName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCityCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByPostCodeHttpPostIn">
+    <wsdl:part name="PostCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByPostCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByTelCodeHttpPostIn">
+    <wsdl:part name="TelCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCityNameByTelCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:portType name="PostCodeSoap">
+    <wsdl:operation name="GetAllProvinceName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all Chinese Province Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetAllProvinceNameSoapIn" />
+      <wsdl:output message="tns:GetAllProvinceNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityNameSoapIn" />
+      <wsdl:output message="tns:GetCityNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTownName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese Town Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetTownNameSoapIn" />
+      <wsdl:output message="tns:GetTownNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Code.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityCodeSoapIn" />
+      <wsdl:output message="tns:GetCityCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByPostCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityNameByPostCodeSoapIn" />
+      <wsdl:output message="tns:GetCityNameByPostCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByTelCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityNameByTelCodeSoapIn" />
+      <wsdl:output message="tns:GetCityNameByTelCodeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PostCodeHttpGet">
+    <wsdl:operation name="GetAllProvinceName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all Chinese Province Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetAllProvinceNameHttpGetIn" />
+      <wsdl:output message="tns:GetAllProvinceNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityNameHttpGetIn" />
+      <wsdl:output message="tns:GetCityNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTownName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese Town Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetTownNameHttpGetIn" />
+      <wsdl:output message="tns:GetTownNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Code.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityCodeHttpGetIn" />
+      <wsdl:output message="tns:GetCityCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByPostCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityNameByPostCodeHttpGetIn" />
+      <wsdl:output message="tns:GetCityNameByPostCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByTelCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityNameByTelCodeHttpGetIn" />
+      <wsdl:output message="tns:GetCityNameByTelCodeHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PostCodeHttpPost">
+    <wsdl:operation name="GetAllProvinceName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all Chinese Province Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetAllProvinceNameHttpPostIn" />
+      <wsdl:output message="tns:GetAllProvinceNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityNameHttpPostIn" />
+      <wsdl:output message="tns:GetCityNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTownName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese Town Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetTownNameHttpPostIn" />
+      <wsdl:output message="tns:GetTownNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Code.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityCodeHttpPostIn" />
+      <wsdl:output message="tns:GetCityCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByPostCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityNameByPostCodeHttpPostIn" />
+      <wsdl:output message="tns:GetCityNameByPostCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByTelCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Chinese City Name.</wsdl:documentation>
+      <wsdl:input message="tns:GetCityNameByTelCodeHttpPostIn" />
+      <wsdl:output message="tns:GetCityNameByTelCodeHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PostCodeSoap" type="tns:PostCodeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllProvinceName">
+      <soap:operation soapAction="http://www.wufish.com/WebService/GetAllProvinceName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityName">
+      <soap:operation soapAction="http://www.wufish.com/WebService/GetCityName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTownName">
+      <soap:operation soapAction="http://www.wufish.com/WebService/GetTownName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityCode">
+      <soap:operation soapAction="http://www.wufish.com/WebService/GetCityCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByPostCode">
+      <soap:operation soapAction="http://www.wufish.com/WebService/GetCityNameByPostCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByTelCode">
+      <soap:operation soapAction="http://www.wufish.com/WebService/GetCityNameByTelCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PostCodeSoap12" type="tns:PostCodeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllProvinceName">
+      <soap12:operation soapAction="http://www.wufish.com/WebService/GetAllProvinceName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityName">
+      <soap12:operation soapAction="http://www.wufish.com/WebService/GetCityName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTownName">
+      <soap12:operation soapAction="http://www.wufish.com/WebService/GetTownName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityCode">
+      <soap12:operation soapAction="http://www.wufish.com/WebService/GetCityCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByPostCode">
+      <soap12:operation soapAction="http://www.wufish.com/WebService/GetCityNameByPostCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByTelCode">
+      <soap12:operation soapAction="http://www.wufish.com/WebService/GetCityNameByTelCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PostCodeHttpGet" type="tns:PostCodeHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetAllProvinceName">
+      <http:operation location="/GetAllProvinceName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityName">
+      <http:operation location="/GetCityName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTownName">
+      <http:operation location="/GetTownName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityCode">
+      <http:operation location="/GetCityCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByPostCode">
+      <http:operation location="/GetCityNameByPostCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByTelCode">
+      <http:operation location="/GetCityNameByTelCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PostCodeHttpPost" type="tns:PostCodeHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetAllProvinceName">
+      <http:operation location="/GetAllProvinceName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityName">
+      <http:operation location="/GetCityName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTownName">
+      <http:operation location="/GetTownName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityCode">
+      <http:operation location="/GetCityCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByPostCode">
+      <http:operation location="/GetCityNameByPostCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityNameByTelCode">
+      <http:operation location="/GetCityNameByTelCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PostCode">
+    <wsdl:port name="PostCodeSoap" binding="tns:PostCodeSoap">
+      <soap:address location="http://gz.wufish.com/webservice/postcode.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PostCodeSoap12" binding="tns:PostCodeSoap12">
+      <soap12:address location="http://gz.wufish.com/webservice/postcode.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PostCodeHttpGet" binding="tns:PostCodeHttpGet">
+      <http:address location="http://gz.wufish.com/webservice/postcode.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PostCodeHttpPost" binding="tns:PostCodeHttpPost">
+      <http:address location="http://gz.wufish.com/webservice/postcode.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

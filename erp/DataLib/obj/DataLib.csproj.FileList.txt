@@ -1,0 +1,8 @@
+bin\Debug\DataLib.dll.config
+bin\Debug\DataLib.dll
+bin\Debug\DataLib.pdb
+bin\Debug\CenterLib.dll
+bin\Debug\CenterLib.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DataLib.dll
+obj\Debug\DataLib.pdb

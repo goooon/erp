@@ -1,0 +1,8 @@
+F:\JXC\UserPrint\bin\Debug\UserPrint.dll
+F:\JXC\UserPrint\bin\Debug\UserPrint.pdb
+F:\JXC\UserPrint\obj\Debug\ResolveAssemblyReference.cache
+F:\JXC\UserPrint\obj\Debug\UserPrint.ReportModal.resources
+F:\JXC\UserPrint\obj\Debug\UserPrint.csproj.GenerateResource.Cache
+F:\JXC\UserPrint\obj\Debug\UserPrint.dll.licenses
+F:\JXC\UserPrint\obj\Debug\UserPrint.dll
+F:\JXC\UserPrint\obj\Debug\UserPrint.pdb

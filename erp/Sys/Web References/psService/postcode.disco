@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://gz.wufish.com/webservice/postcode.asmx?wsdl" docRef="http://gz.wufish.com/webservice/postcode.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://gz.wufish.com/webservice/postcode.asmx" xmlns:q1="http://www.wufish.com/WebService/" binding="q1:PostCodeSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://gz.wufish.com/webservice/postcode.asmx" xmlns:q2="http://www.wufish.com/WebService/" binding="q2:PostCodeSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

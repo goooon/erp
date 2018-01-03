@@ -1,0 +1,315 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E5447ED-20C1-4769-B9AF-FFB0D69C84D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sell</RootNamespace>
+    <AssemblyName>Sell</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v8.2.UI, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.2.Core, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.2.Core, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAcceptImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcceptImport.designer.cs">
+      <DependentUpon>frmAcceptImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAskPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAskPrice.designer.cs">
+      <DependentUpon>frmAskPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAskPriceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAskPriceList.designer.cs">
+      <DependentUpon>frmAskPriceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientFee.Designer.cs">
+      <DependentUpon>frmClientFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientHistoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientHistoryReport.designer.cs">
+      <DependentUpon>frmClientHistoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditClientFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditClientFee.Designer.cs">
+      <DependentUpon>frmEditClientFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpHistoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpHistoryReport.designer.cs">
+      <DependentUpon>frmEmpHistoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReSellPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReSellPrice.designer.cs">
+      <DependentUpon>frmReSellPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReSellPriceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReSellPriceList.designer.cs">
+      <DependentUpon>frmReSellPriceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellAccept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellAccept.designer.cs">
+      <DependentUpon>frmSellAccept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellAcceptList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellAcceptList.designer.cs">
+      <DependentUpon>frmSellAcceptList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellBack.designer.cs">
+      <DependentUpon>frmSellBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellBackList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellBackList.designer.cs">
+      <DependentUpon>frmSellBackList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellOrder.designer.cs">
+      <DependentUpon>frmSellOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellOrderList.designer.cs">
+      <DependentUpon>frmSellOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellOut.designer.cs">
+      <DependentUpon>frmSellOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellOutList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellOutList.designer.cs">
+      <DependentUpon>frmSellOutList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellPre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellPre.designer.cs">
+      <DependentUpon>frmSellPre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellPreList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellPreList.designer.cs">
+      <DependentUpon>frmSellPreList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellPrice.designer.cs">
+      <DependentUpon>frmSellPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellPriceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellPriceList.designer.cs">
+      <DependentUpon>frmSellPriceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockOrderAnnex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockOrderAnnex.Designer.cs">
+      <DependentUpon>frmStockOrderAnnex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\BaseClass.csproj">
+      <Project>{18E1B9C1-841F-4EDE-AC3E-E3E1CD82D1A9}</Project>
+      <Name>BaseClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonData\CommonData.csproj">
+      <Project>{42954806-AAB9-4838-96D4-4A3FFEF4F965}</Project>
+      <Name>CommonData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{3C2E4A70-5001-4E8E-819F-F6B2829778B4}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLib\DataLib.csproj">
+      <Project>{2CAAC3EF-B033-42E7-878B-11D68647CE47}</Project>
+      <Name>DataLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Finance\Finance.csproj">
+      <Project>{4BE20BBF-D81A-42C4-9BC2-E0C206ACE8D1}</Project>
+      <Name>Finance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\myControl\myControl.csproj">
+      <Project>{4F6DE4CC-6C3D-43B4-870F-93226D24170E}</Project>
+      <Name>myControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAcceptImport.resx">
+      <DependentUpon>frmAcceptImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAskPrice.resx">
+      <DependentUpon>frmAskPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAskPriceList.resx">
+      <DependentUpon>frmAskPriceList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientFee.resx">
+      <DependentUpon>frmClientFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientHistoryReport.resx">
+      <DependentUpon>frmClientHistoryReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditClientFee.resx">
+      <DependentUpon>frmEditClientFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpHistoryReport.resx">
+      <DependentUpon>frmEmpHistoryReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReSellPrice.resx">
+      <DependentUpon>frmReSellPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReSellPriceList.resx">
+      <DependentUpon>frmReSellPriceList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellAccept.resx">
+      <DependentUpon>frmSellAccept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellAcceptList.resx">
+      <DependentUpon>frmSellAcceptList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellBack.resx">
+      <DependentUpon>frmSellBack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellBackList.resx">
+      <DependentUpon>frmSellBackList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellOrder.resx">
+      <DependentUpon>frmSellOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellOrderList.resx">
+      <DependentUpon>frmSellOrderList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellOut.resx">
+      <DependentUpon>frmSellOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellOutList.resx">
+      <DependentUpon>frmSellOutList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellPre.resx">
+      <DependentUpon>frmSellPre.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellPreList.resx">
+      <DependentUpon>frmSellPreList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellPrice.resx">
+      <DependentUpon>frmSellPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellPriceList.resx">
+      <DependentUpon>frmSellPriceList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockOrderAnnex.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmStockOrderAnnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

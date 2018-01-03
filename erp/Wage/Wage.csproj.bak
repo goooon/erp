@@ -1,0 +1,161 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5023958-9A7B-47ED-8447-327B7BFC76C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wage</RootNamespace>
+    <AssemblyName>Wage</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEditWage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditWage.designer.cs">
+      <DependentUpon>frmEditWage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormula.Designer.cs">
+      <DependentUpon>frmFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiffWage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiffWage.Designer.cs">
+      <DependentUpon>frmGiffWage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonthWage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonthWage.Designer.cs">
+      <DependentUpon>frmMonthWage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWageCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWageCheckOut.Designer.cs">
+      <DependentUpon>frmWageCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWageInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWageInput.Designer.cs">
+      <DependentUpon>frmWageInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWageItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWageItem.Designer.cs">
+      <DependentUpon>frmWageItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\BaseClass.csproj">
+      <Project>{18E1B9C1-841F-4EDE-AC3E-E3E1CD82D1A9}</Project>
+      <Name>BaseClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{3C2E4A70-5001-4E8E-819F-F6B2829778B4}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLib\DataLib.csproj">
+      <Project>{2CAAC3EF-B033-42E7-878B-11D68647CE47}</Project>
+      <Name>DataLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\myControl\myControl.csproj">
+      <Project>{4F6DE4CC-6C3D-43B4-870F-93226D24170E}</Project>
+      <Name>myControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmEditWage.resx">
+      <DependentUpon>frmEditWage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormula.resx">
+      <DependentUpon>frmFormula.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiffWage.resx">
+      <DependentUpon>frmGiffWage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonthWage.resx">
+      <DependentUpon>frmMonthWage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWageCheckOut.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWageCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWageInput.resx">
+      <DependentUpon>frmWageInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWageItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWageItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

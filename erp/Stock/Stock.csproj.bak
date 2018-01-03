@@ -1,0 +1,226 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C19B4BC-5C6F-45DB-9A2F-185F58B0A141}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Stock</RootNamespace>
+    <AssemblyName>Stock</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.2.Core, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+<Reference Include="DevExpress.XtraScheduler.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmApplyStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApplyStock.Designer.cs">
+      <DependentUpon>frmApplyStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmApplyStockList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApplyStockList.Designer.cs">
+      <DependentUpon>frmApplyStockList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMRP.designer.cs">
+      <DependentUpon>frmMRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayImport.Designer.cs">
+      <DependentUpon>frmPayImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockBack.Designer.cs">
+      <DependentUpon>frmStockBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockBackList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockBackList.Designer.cs">
+      <DependentUpon>frmStockBackList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockIn.Designer.cs">
+      <DependentUpon>frmStockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockInList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockInList.Designer.cs">
+      <DependentUpon>frmStockInList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockOrder.Designer.cs">
+      <DependentUpon>frmStockOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockOrderList.Designer.cs">
+      <DependentUpon>frmStockOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockPay.Designer.cs">
+      <DependentUpon>frmStockPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockPayList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockPayList.Designer.cs">
+      <DependentUpon>frmStockPayList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplierHistoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplierHistoryReport.designer.cs">
+      <DependentUpon>frmSupplierHistoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\BaseClass.csproj">
+      <Project>{18E1B9C1-841F-4EDE-AC3E-E3E1CD82D1A9}</Project>
+      <Name>BaseClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonData\CommonData.csproj">
+      <Project>{42954806-AAB9-4838-96D4-4A3FFEF4F965}</Project>
+      <Name>CommonData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{3C2E4A70-5001-4E8E-819F-F6B2829778B4}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLib\DataLib.csproj">
+      <Project>{2CAAC3EF-B033-42E7-878B-11D68647CE47}</Project>
+      <Name>DataLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Finance\Finance.csproj">
+      <Project>{4BE20BBF-D81A-42C4-9BC2-E0C206ACE8D1}</Project>
+      <Name>Finance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\myControl\myControl.csproj">
+      <Project>{4F6DE4CC-6C3D-43B4-870F-93226D24170E}</Project>
+      <Name>myControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Product\Product.csproj">
+      <Project>{76B41DE1-7924-4D38-9F97-74462AD1C4B2}</Project>
+      <Name>Product</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmApplyStock.resx">
+      <DependentUpon>frmApplyStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApplyStockList.resx">
+      <DependentUpon>frmApplyStockList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMRP.resx">
+      <DependentUpon>frmMRP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayImport.resx">
+      <DependentUpon>frmPayImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockBack.resx">
+      <DependentUpon>frmStockBack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockBackList.resx">
+      <DependentUpon>frmStockBackList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockIn.resx">
+      <DependentUpon>frmStockIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockInList.resx">
+      <DependentUpon>frmStockInList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockOrder.resx">
+      <DependentUpon>frmStockOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockOrderList.resx">
+      <DependentUpon>frmStockOrderList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockPay.resx">
+      <DependentUpon>frmStockPay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockPayList.resx">
+      <DependentUpon>frmStockPayList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplierHistoryReport.resx">
+      <DependentUpon>frmSupplierHistoryReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

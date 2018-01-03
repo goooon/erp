@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BB71BB1-52E1-46C3-A58F-9E5D067B267C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UserDesignForm</RootNamespace>
+    <AssemblyName>UserDesignForm</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicHostLoader.cs" />
+    <Compile Include="DesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignForm.Designer.cs">
+      <DependentUpon>DesignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FieldEditForm.Designer.cs">
+      <DependentUpon>FieldEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpress.designer.cs">
+      <DependentUpon>frmExpress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManaField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManaField.designer.cs">
+      <DependentUpon>frmManaField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HostSurface.cs" />
+    <Compile Include="HostSurfaceManager.cs" />
+    <Compile Include="NameCreationService.cs" />
+    <Compile Include="OpenWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenWindow.Designer.cs">
+      <DependentUpon>OpenWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DesignForm.resx">
+      <DependentUpon>DesignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldEditForm.resx">
+      <DependentUpon>FieldEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpress.resx">
+      <DependentUpon>frmExpress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManaField.resx">
+      <DependentUpon>frmManaField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostControl.resx">
+      <DependentUpon>HostControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenWindow.resx">
+      <DependentUpon>OpenWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="BasicToolBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SaveLoadLayout.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\BaseClass.csproj">
+      <Project>{18E1B9C1-841F-4EDE-AC3E-E3E1CD82D1A9}</Project>
+      <Name>BaseClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Base\Base.csproj">
+      <Project>{CBACA6EC-243E-4CD9-BA86-4C9381E48785}</Project>
+      <Name>Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLib\DataLib.csproj">
+      <Project>{2CAAC3EF-B033-42E7-878B-11D68647CE47}</Project>
+      <Name>DataLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\myControl\myControl.csproj">
+      <Project>{4F6DE4CC-6C3D-43B4-870F-93226D24170E}</Project>
+      <Name>myControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OutProduct\OutProduct.csproj">
+      <Project>{9A8DEA9B-902F-4EE2-B471-7DF3677DBB14}</Project>
+      <Name>OutProduct</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Product\Product.csproj">
+      <Project>{76B41DE1-7924-4D38-9F97-74462AD1C4B2}</Project>
+      <Name>Product</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sell\Sell.csproj">
+      <Project>{4E5447ED-20C1-4769-B9AF-FFB0D69C84D8}</Project>
+      <Name>Sell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stock\Stock.csproj">
+      <Project>{0C19B4BC-5C6F-45DB-9A2F-185F58B0A141}</Project>
+      <Name>Stock</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Storage\Storage.csproj">
+      <Project>{495518DB-3672-4D86-8C3A-79EDF00649F1}</Project>
+      <Name>Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sys\Sys.csproj">
+      <Project>{E7BD7C0D-FCA9-4DD8-9D18-9658FEDFDB29}</Project>
+      <Name>Sys</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSave.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNew.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnClose.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDelRow.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddRow.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEdit.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pcTitle.Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%2814,10%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%2800,01%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%2849,00%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDel.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCheck.Glyph.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
